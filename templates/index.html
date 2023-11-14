@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            height: 100vh;
+            margin: 0;
+        }
+
+        .tile {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white; /* Change text color if needed */
+            text-align: center;
+            font-size: 1.5em;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+        .tile:nth-child(1) {
+            background-image: none;
+            background-color: white;
+            color: black;
+        }
+
+        .tile:nth-child(2) {
+            background-image: url('/static/background.jpg');
+        }
+
+        .tile:nth-child(3) {
+            background-image: url('/static/Chloe.jpg'); /* Add the path to your image */
+        }
+
+        .tile:nth-child(4) {
+            background-image: url('/static/Finn.jpg');
+        }
+
+        .tile:nth-child(5) {
+            background-image: url('/static/Fleur.jpg');
+        }
+
+        .tile:nth-child(6) {
+            background-image: url('/static/triathlon.jpeg');
+        }
+
+        /* Add more image tiles if needed */
+
+    </style>
+</head>
+<body>
+    <div class="tile">Welcome to the personal portfolio website of Stephen Vickery. <br> This is under development</div>
+    <div class="tile"></div>
+    <div class="tile"></div>
+    <div class="tile"></div>
+    <div class="tile"></div>
+    <div class="tile"></div>
+</body>
+</html>
