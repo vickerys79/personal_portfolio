@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         body {
             display: grid;
@@ -15,9 +16,10 @@
 
         .tile {
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
-            color: white; /* Change text color if needed */
+            color: white;
             text-align: center;
             font-size: 1.5em;
             background-size: cover;
@@ -25,18 +27,35 @@
             background-position: center center;
         }
 
-        .tile:nth-child(1) {
+       .tile:nth-child(1) {
             background-image: none;
-            background-color: white;
-            color: black;
+            background-color: #3498db;
+            color: white;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .tile:nth-child(1) p {
+            margin-bottom: 20px;
+        }
+
+        .tile:nth-child(1) a {
+            margin: 0 20px;
+            color: #ecf0f1; /* Change icon color if desired */
+            font-size: 1.5em;
+        }
+
+        .tile:nth-child(1) a:hover {
+            color: #2c3e50;
         }
 
         .tile:nth-child(2) {
-            background-image: url('/static/background.jpg');
+            background-image: url('/static/Steve.jpeg');
+            background-size: 80%;
         }
 
         .tile:nth-child(3) {
-            background-image: url('/static/Chloe.jpg'); /* Add the path to your image */
+            background-image: url('/static/background.jpg');
         }
 
         .tile:nth-child(4) {
@@ -44,7 +63,7 @@
         }
 
         .tile:nth-child(5) {
-            background-image: url('/static/Fleur.jpg');
+            background-image: url('/static/Chloe.jpg');
         }
 
         .tile:nth-child(6) {
@@ -56,7 +75,18 @@
     </style>
 </head>
 <body>
-    <div class="tile">Welcome to the personal portfolio website of Stephen Vickery. <br> This is under development</div>
+    <div class="tile">
+        Welcome to the personal portfolio website of Stephen Vickery. <br> <br>
+        I am a Python developer with a wealth of experience in the IT industry. For more details about me please take
+        a look at my profile page. <br><br>
+        <b> This site is under development. </b> <br>
+           <div>
+            <a href="https://github.com/vickerys79" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/vickerystephen" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:vickerys79@outlook.com"><i class="fas fa-envelope"></i></a>
+            <a href="/profile" target="_blank">Profile Overview</a>
+        </div>
+    </div>
     <div class="tile"></div>
     <div class="tile"></div>
     <div class="tile"></div>
